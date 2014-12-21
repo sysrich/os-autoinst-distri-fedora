@@ -9,7 +9,7 @@ sub run() {
     assert_screen "inst-rootpw-selected", 5;
     send_key 'ret';
     assert_screen "inst-rootpw", 5;
-    #FIXME - Why the hell can't fedora handle 7 characters in a single typed string?
+    #FIXME - type_string seems to type too fast for anaconda See rh#1176453
     #type_string "Fedup0-", 1;
     sleep 1;
     send_key 'shift-f';
