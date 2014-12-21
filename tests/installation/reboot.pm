@@ -4,7 +4,7 @@ use testapi;
 
 sub run() {
 
-    assert_screen "gnome-desktop", 5;
+    assert_screen "gnome-desktop", 30;
     send_key 'ctrl-alt-delete';
     assert_screen "gnome-logout", 5;
     send_key 'tab';
@@ -24,8 +24,15 @@ sub run() {
     unless ( defined($ret) ) {
         assert_screen "gnome-logout-reboot-highlighted", 1;
     }
+        
+    sleep 4;
     
     send_key 'ret';
+    
+    sleep 6;
+    
+    backend_send "eject -f ide1-cd0";
+
  
 }
 

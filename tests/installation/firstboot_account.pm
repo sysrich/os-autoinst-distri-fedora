@@ -9,6 +9,7 @@ sub run() {
     assert_screen "firstboot-account-name", 5;
     send_key 'alt-u';
     type_string 'richard';
+    assert_screen "firstboot-account-username", 5;
     send_key 'alt-n';
     assert_screen "firstboot-account-password", 5;
     type_string 'Fed0ra!';

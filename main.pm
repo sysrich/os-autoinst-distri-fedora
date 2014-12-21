@@ -30,6 +30,7 @@ sub load_inst_tests(){
 	loadtest "installation/bootloader.pm";
 	loadtest "installation/firstboot_lang.pm";
 	loadtest "installation/firstboot_keyboard.pm";
+	loadtest "installation/firstboot_timezone.pm";
 	loadtest "installation/firstboot_online.pm";
 	loadtest "installation/firstboot_account.pm";
 	loadtest "installation/firstboot_readytogo.pm";

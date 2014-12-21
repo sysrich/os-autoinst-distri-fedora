@@ -7,8 +7,9 @@ sub run() {
     assert_screen "login-gdm", 120;
     send_key 'ret';
     assert_screen "login-password", 5;
+    type_string "Fed0ra!";
     send_key 'ret';
-    assert_screen "login-loggedin", 5;
+    assert_screen "gnome-desktop", 30;
  
 }
 
